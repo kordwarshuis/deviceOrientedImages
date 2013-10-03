@@ -19,9 +19,9 @@ function deviceOrientedImages(args) {
     }());
 
     // generate images dynamically
-        var generateImages = (function () {
-            var generatedImgs = [];
-         if (args) {
+    var generateImages = (function () {
+        var generatedImgs = [];
+        if (args) {
             var howManyImages = args.howManyImages || 0;
             for (var i = 0; i < howManyImages; i++) {
                 generatedImgs.push(new Image());
@@ -33,8 +33,8 @@ function deviceOrientedImages(args) {
                 document.getElementsByTagName("body")[0].appendChild(generatedImgs[i]);
             }
         }
-            return {generatedImgs: generatedImgs};
-        }());
+        return {generatedImgs: generatedImgs};
+    }());
 
     var rotateX = function (xAxis) {
         for (var i = 0; i < allImagesLength; i++) {
@@ -74,7 +74,6 @@ function deviceOrientedImages(args) {
     rotateY(1);
 
 
-
     if (window.DeviceOrientationEvent) {
         window.addEventListener("deviceorientation", function (e) {
             // portrait
@@ -105,7 +104,7 @@ function deviceOrientedImages(args) {
 
 /*
  * config, if you want to add some images, do it here (or direct in the html)
-*/
+ */
 var config = {
     imagePath: "img/bee2.png",
     howManyImages: 30
