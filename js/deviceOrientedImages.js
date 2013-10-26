@@ -1,3 +1,9 @@
+/*
+ * deviceOrientedImages
+ * Copyright (c) 2013 Kor Dwarshuis (dwarshuis.com)
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
 function deviceOrientedImages(args) {
     "use strict";
     var SPEED = 20;

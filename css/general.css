@@ -1,3 +1,9 @@
+/*
+ * deviceOrientedImages
+ * Copyright (c) 2013 Kor Dwarshuis (dwarshuis.com)
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license.php
+ */
 html, body {
     background: #0a021c;
     color: #fff;
@@ -51,7 +57,5 @@ p {
 .rotatingImage {
     /*position: fixed;*/
     z-index: 998;
-
-
 }
 
